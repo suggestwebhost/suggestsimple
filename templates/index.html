@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask and HTML</title>
+</head>
+<body>
+    <!-- Displaying a basic text variable -->
+    <h1>Hello, {{ name }}!</h1>
+    <p>Welcome to your Flask-powered website.</p>
+
+    <h3>My Tech Stack:</h3>
+    <ul>
+        <!-- Using a loop to iterate through a list sent from Python -->
+        {% for language in tech_stack %}
+            <li>{{ language }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
